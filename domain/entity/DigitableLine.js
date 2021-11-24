@@ -1,9 +1,8 @@
 class DigitableLine {
     
-    constructor(line, digitCheckerMod10, digitCheckerMod11){
+    constructor(line, digitCheckerMod10){
         this.line               = line
         this.digitCheckerMod10  = digitCheckerMod10
-        this.digitCheckerMod11  = digitCheckerMod11
     }
 
     validate(){
@@ -12,8 +11,8 @@ class DigitableLine {
             let field                       = this.getField( idx )
             let fieldWithoutDigitChecker    = field.toString().substring( 0, field.toString().length-1 )
             let fieldDigitChecker           = parseInt( field.substring(field.toString().length-1, field.toString().length) )
-            if(this.digitCheckerMod10.getCheckDigit( fieldWithoutDigitChecker ) === fieldDigitChecker) 
-                console.log( "------->", idx, field, fieldDigitChecker, this.digitCheckerMod10.getCheckDigit(fieldWithoutDigitChecker) );
+            //if(this.digitCheckerMod10.getCheckDigit( fieldWithoutDigitChecker ) === fieldDigitChecker) 
+            //    console.log( "------->", idx, field, fieldDigitChecker, this.digitCheckerMod10.getCheckDigit(fieldWithoutDigitChecker) );
         }
 
     }
