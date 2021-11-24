@@ -1,5 +1,5 @@
-const DigitChecker = require('../../validator/DigitCheckerModule10')
-const digitChecker = new DigitChecker()
+import DigitCheckerModule10 from "../../validator/DigitCheckerModule10.js"
+const digitChecker = new DigitCheckerModule10()
 
 test('Digito verificador de [ 659518485131865 ] deve ser  [ 9 ]', () => {
     expect( digitChecker.getCheckDigit( 659518485131865 ) ).toBe( 9 )
