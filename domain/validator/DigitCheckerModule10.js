@@ -1,4 +1,4 @@
- class CheckDigitModule10 {
+ class DigitCheckerModule10 {
     calculateModule(number){
         let multiplier      = 2
         let total           = 0
@@ -31,4 +31,4 @@
     }
 }
 
-export default CheckDigitModule10
+export default DigitCheckerModule10
