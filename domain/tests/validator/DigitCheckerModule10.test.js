@@ -1,4 +1,4 @@
-const DigitChecker = require('../validator/DigitCheckerModule10')
+const DigitChecker = require('../../validator/DigitCheckerModule10')
 const digitChecker = new DigitChecker()
 
 test('Digito verificador de [ 659518485131865 ] deve ser  [ 9 ]', () => {
