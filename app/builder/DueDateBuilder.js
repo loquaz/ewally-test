@@ -5,8 +5,8 @@ class DueDateBuilder {
     }
 
     getDueDate(dueDateInDays){
-        this.baseDate.setDate( this.baseDate.getDate() + dueDateInDays)
-        let date = this.baseDate
+        let date = new Date( this.baseDate )
+        date.setDate( this.baseDate.getDate() + dueDateInDays)        
         let month = (date.getMonth() + 1)
         if( month < 10 ) month = "0" + month
         let day = date.getDate()
