@@ -1,4 +1,4 @@
-import DigitCheckerModule10 from "../../validator/DigitCheckerModule10.js"
+import DigitCheckerModule10 from "../../validator/DigitCheckerModule10"
 const digitChecker = new DigitCheckerModule10()
 
 test('Digito verificador de [ 659518485131865 ] deve ser  [ 9 ]', () => {

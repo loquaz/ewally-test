@@ -1,4 +1,4 @@
-class BarCode {
+class RegularBarCode {
 
     constructor(digitChkerMod11){        
         this.digitChecker = digitChkerMod11       
@@ -38,4 +38,4 @@ class BarCode {
 
 }
 
-export default BarCode
+export default RegularBarCode

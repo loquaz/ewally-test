@@ -1,4 +1,4 @@
-class BankBill{
+class BankBill {
 
     constructor(barCode, amount, dueDate){
         this.barCode    = barCode

@@ -1,4 +1,4 @@
-class DueDateBuilder {
+class ExpirationDateBuilder {
 
     constructor(baseDate){
         this.baseDate = baseDate
@@ -15,4 +15,4 @@ class DueDateBuilder {
     }
 }
 
-export default DueDateBuilder
+export default ExpirationDateBuilder
