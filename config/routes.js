@@ -1,5 +1,5 @@
 import express from "express"
-import  { bankBillController } from "./iocContainer.js"
+import  { bankBillController } from "./IocContainer.js"
 
 const router = express.Router()
 

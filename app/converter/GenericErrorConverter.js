@@ -2,7 +2,7 @@ class GenericErrorConverter {
     convert(error){
         return {
             "message" : error.message,
-            "code" : "error.getCode()"
+            "code" : "0003"
         }
     }
 }

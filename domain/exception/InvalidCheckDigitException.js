@@ -1,4 +1,4 @@
-import ErrorCodes from "../../app/exception_handler/ErrorCodes.js"
+import ErrorCodes from "../ErrorCodes.js"
 
 class InvalidCheckDigitException extends Error{
     constructor(message){

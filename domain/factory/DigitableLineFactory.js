@@ -1,4 +1,4 @@
-import { digitCheckerMod10 } from "../../config/iocContainer.js";
+import { digitCheckerMod10 } from "../../config/IocContainer.js";
 import { ENTERPRISE_DIGITABLE_LINE_SIZE, REGULAR_DIGITABLE_LINE_SIZE } from "../constants.js";
 import EnterpriseDigitableLine from "../entity/EnterpriseDigitableLine.js";
 import RegularDigitableLine from "../entity/RegularDigitableLine.js";

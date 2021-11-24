@@ -1,4 +1,4 @@
-import ErrorCodes from "../../app/exception_handler/ErrorCodes.js"
+import ErrorCodes from "../ErrorCodes.js"
 
 class InvalidDigitableLineException extends Error{
     constructor(message){
