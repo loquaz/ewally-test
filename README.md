@@ -1,6 +1,7 @@
 # Deploy
 
 Pode ser feito de duas maneiras:
+
 1 - Na linha de comando, estando na raiz do projeto executar 
 
     $> npm install
