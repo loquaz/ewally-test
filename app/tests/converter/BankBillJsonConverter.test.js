@@ -12,13 +12,16 @@ const regularBankBill2         = bankBillUseCase.generate( regularDigitableLine2
 const regularBankBill3         = bankBillUseCase.generate( regularDigitableLine3 )
 
 const enterpriseDigitableLine1 = "826800000000538200478211807588370120160000000002"
+const enterpriseDigitableLine2 = "826500000011075100478215807588370328000000000000"
 const enterpriseBankBill1      = bankBillUseCase.generate( enterpriseDigitableLine1 )
+const enterpriseBankBill2      = bankBillUseCase.generate( enterpriseDigitableLine2 )
 
 const jsonConverter     = new BankBillJsonConverter( new DueDateBuilder( BASE_DATE ), new AmountBuilder() )
 const response1         = jsonConverter.convert( regularBankBill1 )
 const response2         = jsonConverter.convert( regularBankBill2 )
 const response3         = jsonConverter.convert( regularBankBill3 )
 const response4         = jsonConverter.convert( enterpriseBankBill1 )
+const response5         = jsonConverter.convert( enterpriseBankBill2 )
 const barCodeDigits1    = "00193373700000001000500940144816060680935031"
 const barCodeDigits2    = "21299758700000020000001121100012100447561740"
 const barCodeDigits3    = "21291758700000562230001121100012100447561740"
@@ -58,4 +61,8 @@ test("a data de vencimento para a linha " + enterpriseDigitableLine1 + " deve se
 
 test("o valor do boleto para a linha " + enterpriseDigitableLine1 + " deve ser  [ 53.82 ]", () => {
     expect( response4.amount ).toBe( "53.82" )
+})
+
+test("o valor do boleto para a linha " + enterpriseDigitableLine2 + " deve ser  [ 107.51 ]", () => {
+    expect( response5.amount ).toBe( "107.51" )
 })
