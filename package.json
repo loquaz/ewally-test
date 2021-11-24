@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "serve" : "node index.js"
+    "serve" : "npm test && node index.js"
   },
   "author": "Sereno Mendes",
   "license": "ISC",
