@@ -1,14 +1,14 @@
 class BankBillJsonConverter {
-    constructor(bankBill, expirationDateBuilder){
-        this.bankBill               = bankBill
+    constructor(expirationDateBuilder, amountBuilder){
         this.expirationDateBuilder  = expirationDateBuilder
+        this.amountBuilder          = amountBuilder
     }
 
-    convert(){
+    convert(bankBill){
         return {
-            "barCode" : this.bankBill.getBarCode(),
-            "amount" : this.bankBill.getAmount(),
-            "expirationDate" : this.expirationDateBuilder.getDueDate( parseInt( this.bankBill.getExpirationDateFactor() ) )
+            "barCode" : bankBill.getBarCode(),
+            "amount" : this.amountBuilder.getAmount( bankBill.getAmount() ),
+            "expirationDate" : this.expirationDateBuilder.getDueDate( parseInt( bankBill.getExpirationDateFactor() ) )
         }
     }
 }
