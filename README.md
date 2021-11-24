@@ -31,3 +31,5 @@ Neste arquivo são exportadas instancias de objetos, alnguns dos quais tem suas 
 
 ## Roteamento com closure
 O arquivo responsável pelas rotas - mentira, só tem uma rota. ;) - expõe uma closure que se beneficia da simulação de inversao de controle. Ao ser executada, essa closure retorna uma função, com o controller responsável por gerar os boletos, já com todas as dependencias necessarias, que foram injetadas no "container IoC".
+
+![plot](./error-handler.png)
